@@ -34,14 +34,7 @@ body {
     align-items: center;
 
 }
-/* .apresentacao__input_input{
-    gap: 12px;
-    height: 400px;
-    border-radius: 15px;
-    background-color: var(--cor-secundaria);
-    width: 985px;
 
-} */
 textarea {
     background-color: var(--cor-secundaria);
     width: 40rem;
@@ -49,9 +42,9 @@ textarea {
     border: none;
     padding: 15px;
     border-radius: 15px;
-    max-width: 980px;
+    max-width: 900px;
     max-height: 400px;
-    min-width: 980px;
+    min-width: 900px;
     min-height: 400px;
 } 
 .alerta {
@@ -160,6 +153,9 @@ textarea {
 }
 
 .rodape {
-    margin-top: 100px;
+    margin-top: 25px;
     background-color: var(--cor-atencao);
+}
+button {
+    cursor: pointer;
 }

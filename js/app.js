@@ -1,10 +1,8 @@
 let mensagem = document.querySelector('textarea'); //pega texto do input
 let img = document.getElementById('imagem_ilustrativa');
 let mensagemCriptografada = '';
-let botao = document.getElementById("botao__copiar");
-//botao.removeAttribute('hidden');
+let botaoCopiar = document.getElementById('botao__copiar');
 
-//document.getElementById('reiniciar').removeAttribute('disabled');
 function criptografar() {
     if (mensagem.value == '') { 
         verificaTexto();
@@ -19,10 +17,8 @@ function criptografar() {
         img.style.display = 'none';
         alteraTexto('h2', '');
         alteraTexto('p', mensagemCriptografada);//valor do input
-        console.log(mensagem.value);
         mensagem.value = '';//limpa campo
-    }
-    
+    }  
 }
 
 function descriptografar() {
@@ -53,7 +49,15 @@ function verificaTexto() {
         mensagem.value = '';//limpa campo
 
 }
+
 function alteraTexto(tag, texto){
     let campo = document.querySelector(tag);
     campo.innerHTML = texto;
 }
+botaoCopiar.addEventListener("click", (evt) => {
+    navigator.clipboard.writeText(mensagemCriptografada);
+
+});
+
+
+
