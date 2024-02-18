@@ -92,7 +92,7 @@ textarea {
 }
 .botao_criptografar:hover{
     background-color: var(--cor-primaria);
-    color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
     width: 340px;
     font-size: 23px;
     transition: 1s;
@@ -141,7 +141,7 @@ textarea {
     font-weight: 600;
     font-family: var(--fonte-secundaria);
     transition: 1s;
-    margin-top: 350px;
+    /* margin-top: 350px; */
 }
 #botao__copiar:not([hidden]):hover {
  
