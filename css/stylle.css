@@ -25,7 +25,7 @@ body {
     height: 100vh;
     box-sizing: border-box;
     background-color: var(--cor-primaria);
-    color: #F6F6F6;
+    color: var(--cor-terciaria);
 }
 
 button {
