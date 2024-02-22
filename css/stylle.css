@@ -24,7 +24,6 @@
 
 }
 body {
-    /* height: 100vh; */
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-terciaria);
@@ -50,7 +49,7 @@ button {
     color: var(--cor-terciaria);
     text-decoration: none;
     font-family: var(--fonte-principal);
-    font-size: 24px;
+    font-size: 1rem;
     font-weight: 600;
     padding: 15px;
     transition: 1.5s;
@@ -62,6 +61,7 @@ button {
     border-width: 1px; 
     border-style:dashed; 
     border-radius: 50px;
+    font-size: 1.1rem;
     border-color:  var(--cor-terciaria);
     transition: 1.5s;
 
@@ -84,26 +84,22 @@ button {
 
 }
 .alerta__alerta {
-    /* font-family: var(--fonte-secundaria); */
     color: var(--cor-terciaria);
     display: flex;
     font-family: var(--fonte-secundaria);
-
-
 }
 #mensagem {
     background-color: var(--cor-secundaria);
-    width: 40rem;
+    width: 50rem;
     height: 20rem;
     border: none;
     padding: 15px;
     border-radius: 15px;
-    max-width: 900px;
-    max-height: 400px;
-    min-width: 900px;
-    min-height: 400px;
+    max-width: 50rem;
+    max-height: 20rem;
 
-
+    min-width: 50rem;
+    min-height: 20rem;
 }
 
 .alerta {
@@ -129,9 +125,9 @@ button {
     gap: 12px;
     border: 2px solid var(--cor-secundaria);
     border-radius: 5px;
-    width: 320px;
+    width: 16rem;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.3rem;
     padding: 21.5px 0;
     text-decoration: none;
     font-weight: 600;
@@ -140,8 +136,8 @@ button {
 .botao_criptografar:hover{
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    width: 340px;
-    font-size: 23px;
+    width: 17rem;
+    font-size: 1.5rem;
     transition: 1s;
 }
 
@@ -153,9 +149,9 @@ button {
     gap: 12px;
     border: 2px solid var(--cor-terciaria);
     border-radius: 5px;
-    width: 320px;
+    width: 16rem;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.3rem;
     padding: 21.5px 0;
     text-decoration: none;
     font-weight: 600;
@@ -164,8 +160,8 @@ button {
 .botao_descriptografar:hover {
     background-color: var(--cor-primaria);
     color: var(--cor-terciaria);
-    width: 340px;
-    font-size: 23px;
+    width: 17rem;
+    font-size: 1.5rem;
     transition: 1s;
 }
 
@@ -182,13 +178,11 @@ button {
 }
 
 #imagem_ilustrativa {
-    height: 250px;
+    height: 50%;
 }
 
 .atencao {
-    color: var(--cor-quartearia);
-
-    
+    color: var(--cor-quartearia);   
 }
 .notificacao {
     position: fixed;
@@ -212,7 +206,7 @@ button {
     border-radius: 5px;
     width: 320px;
     text-align: center;
-    font-size: 20px;
+    font-size: 1rem;
     padding: 21.5px 0;
     text-decoration: none;
     font-weight: 600;
@@ -233,7 +227,7 @@ button {
     background-color: var(--cor-quartearia);
     text-align: center;
     font-family: var(--fonte-principal);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 .rodape__rodape{
@@ -244,11 +238,85 @@ button {
 
 /* Pagina Sobre */
 .apresentacao__conteudo__texto {
-    color: var(--cor-quartearia);
+    color: var(--cor-terciaria);
     text-align:justify;
-    /* superior | direita | inferior | esquerda */
-    padding: 7px 100px;
+    padding: 7px 10px;
+}
+.ferramentas{
+    list-style:none;
 }
 
+@media (min-width: 400px ) and (max-width: 820px) {
+    .apresentacao {
+        flex-direction: column;
+    }
 
+    #mensagem{
+        width: 15rem;
+        height: 20rem;
+        padding: 15px;
+
+        max-width: 15rem;
+        max-height: 20rem;
+        min-width: 15rem;
+        min-height: 20rem;
+    }
+
+    .apresentacao__resultado{
+        width: 15rem;
+        height: 20rem;
+        padding: 15px;
+        max-width: 15rem;
+        max-height: 20rem;
+        min-width: 15rem;
+        min-height: 20rem;
+    }
+    .alerta {
+        display: flex;
+        padding: 10px;
+        justify-content: start;
+        font-size: small;
+    
+    }
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .apresentacao__links {
+        flex-direction:column;
+
+    }
+    #botao__copiar:not([hidden]) {
+        background-color: var(--cor-secundaria);
+        width: 10rem;
+    }
+    #botao__copiar:not([hidden]):hover {
+        background-color: var(--cor-terciaria);
+        color: var(--cor-primaria);
+        width: 11rem;
+        font-size: 20px;
+        transition: 1s;
+    
+    }
+}
+@media (min-width: 821px ) and (max-width: 1315px){
+    .apresentacao {
+        flex-direction: column;
+    }
+    #mensagem{
+        background-color: var(--cor-quartearia);
+        width: 40rem;
+        height: 10rem;
+        padding: 15px;
+        max-width: 40rem;
+        max-height: 10rem;
+        min-width: 40rem;
+        min-height: 10rem;
+    }
+    .apresentacao__resultado{
+        padding: 15px;
+    }
+
+} 
 
