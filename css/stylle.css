@@ -13,16 +13,18 @@
     --fonte-secundaria: "Source Code Pro", monospace;
 }
 .icon {
-    color: #EE99C2;
+    color: var(--cor-terciaria);
 }
 
 *{
     margin: 0;
     padding: 0;
     font-family: var(--fonte-secundaria);
+    color: var(--cor-quartearia);
+
 }
 body {
-    height: 100vh;
+    /* height: 100vh; */
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-terciaria);
@@ -236,7 +238,16 @@ button {
 }
 .rodape__rodape{
     font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
 
+}
+
+/* Pagina Sobre */
+.apresentacao__conteudo__texto {
+    color: var(--cor-quartearia);
+    text-align:justify;
+    /* superior | direita | inferior | esquerda */
+    padding: 7px 100px;
 }
 
 
