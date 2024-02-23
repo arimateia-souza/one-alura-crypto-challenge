@@ -52,7 +52,7 @@ function descriptografar() {
 function verificaTexto() {
         img.style.display = '';
         document.getElementById('botao__copiar').setAttribute('hidden', true);
-        img.src = '/imgs/homem.png'
+        img.src = 'imgs/homem.png'
         alteraTexto('h2', 'Mensagem inválida!');
         alteraTexto('p', 'Digite uma mensagem válida para criptografar ou descriptografar');//valor do input
         mensagem.value = '';//limpa campo
